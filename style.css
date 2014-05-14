@@ -1,0 +1,11 @@
+/*
+Theme Name: Slowave Child
+Theme URI: 
+Description: Child theme for the Slowave theme
+Author: <a href="http://www.madeinebor.com" title="Visit author homepage">Tom Rhodes</a>
+Author URI: 
+Template: slowave
+Version: 1.0.0
+*/
+
+@import url('../slowave/style.css');
