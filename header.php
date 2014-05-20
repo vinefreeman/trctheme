@@ -43,6 +43,7 @@
         		<img src="<?php echo $logo; ?>" alt="<?php echo get_option('custom_logo_alt_text'); ?>" class="retina" />
         	</a> 
         </div>
+<<<<<<< HEAD
       <div class="pull-right">
 		<?php 
 			if( is_active_sidebar('shop') ) :
@@ -53,7 +54,32 @@
 
 		?>
 	</div>
+=======
+
+        <div class="pull-right">
+        	<?php 
+        		if (is_active_sidebar('shop')) :
+        			dynamic_sidebar('shop'); 
+        		endif;
+        	?>
+
+        </div>
+        
+>>>>>>> f9ba7a5decfad3ac18e5421db81c1788cab6c519
         <div class="collapse navbar-collapse pull-right">
+        	<?php 
+	        	 wp_nav_menu( array(
+					        'theme_location'    => 'global',
+					        'depth'             => 3,
+					        'container'         => false,
+					        'container_class'   => false,
+					        'menu_class'        => 'nav global-contact',
+					        'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+					        'walker'            => new ebor_bootstrap_navwalker())
+					    );
+				?>	
+
+
         	<?php
         		if( is_page_template('page_one_pager.php') ){
         		

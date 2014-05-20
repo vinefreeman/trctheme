@@ -1,11 +1,17 @@
 /*
-Theme Name: Slowave Child
+Theme Name: TRC Child
 Theme URI: 
-Description: Child theme for the Slowave theme
-Author: <a href="http://www.madeinebor.com" title="Visit author homepage">Tom Rhodes</a>
+Description: Child theme for the TRC
+Author: <a href="http://www.redheadmedia.co.uk" title="Visit author homepage">Redhead</a>
 Author URI: 
 Template: slowave
 Version: 1.0.0
 */
 
 @import url('../slowave/style.css');
+
+.navbar-header{
+ background-color: rgba(255,255,255,.5) !important;
+ }
+ .offset{padding-top: 0px !important}
+ .navbar-brand{background-color: #fff !important; padding: 30px 20px;  border-bottom: 3px solid #662d91;}
