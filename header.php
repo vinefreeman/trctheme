@@ -45,6 +45,19 @@
         </div>
         
         <div class="collapse navbar-collapse pull-right">
+        	<?php 
+	        	 wp_nav_menu( array(
+					        'theme_location'    => 'global',
+					        'depth'             => 3,
+					        'container'         => false,
+					        'container_class'   => false,
+					        'menu_class'        => 'nav global-contact',
+					        'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+					        'walker'            => new ebor_bootstrap_navwalker())
+					    );
+				?>	
+
+
         	<?php
         		if( is_page_template('page_one_pager.php') ){
         		

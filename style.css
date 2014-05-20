@@ -9,3 +9,9 @@ Version: 1.0.0
 */
 
 @import url('../slowave/style.css');
+
+.navbar-header{
+ background-color: rgba(255,255,255,.5) !important;
+ }
+ .offset{padding-top: 0px !important}
+ .navbar-brand{background-color: #fff !important; padding: 30px 20px;  border-bottom: 3px solid #662d91;}
