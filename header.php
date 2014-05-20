@@ -43,6 +43,18 @@
         		<img src="<?php echo $logo; ?>" alt="<?php echo get_option('custom_logo_alt_text'); ?>" class="retina" />
         	</a> 
         </div>
+<<<<<<< HEAD
+      <div class="pull-right">
+		<?php 
+			if( is_active_sidebar('shop') ) :
+
+				dynamic_sidebar('shop');	
+
+				endif;
+
+		?>
+	</div>
+=======
 
         <div class="pull-right">
         	<?php 
@@ -53,6 +65,7 @@
 
         </div>
         
+>>>>>>> f9ba7a5decfad3ac18e5421db81c1788cab6c519
         <div class="collapse navbar-collapse pull-right">
         	<?php 
 	        	 wp_nav_menu( array(
