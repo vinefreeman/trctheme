@@ -43,6 +43,15 @@
         		<img src="<?php echo $logo; ?>" alt="<?php echo get_option('custom_logo_alt_text'); ?>" class="retina" />
         	</a> 
         </div>
+
+        <div class="pull-right">
+        	<?php 
+        		if (is_active_sidebar('shop')) :
+        			dynamic_sidebar('shop'); 
+        		endif;
+        	?>
+
+        </div>
         
         <div class="collapse navbar-collapse pull-right">
         	<?php 
