@@ -13,11 +13,6 @@ Version: 1.0.0
 .navbar-header{
  background-color: rgba(255,255,255,.5) !important;
  }
- .home .offset{padding-top: 0px !important}
+ .offset{padding-top: 0px !important}
  .navbar-brand{background-color: #fff !important; padding: 30px 20px;  border-bottom: 3px solid #662d91;}
- .navbar-collapse{clear: right !important}
- .navbar-nav > li > a {padding: 20px 14px !important}
-
- /*Navbits*/
- .navbar-nav a {background: url('../slowave-child/images/hover-inactive.png') no-repeat bottom left;}
- .navbar-nav li.trchouse a {background: url('../slowave-child/images/trc-house.png') no-repeat bottom center; height: 20px; width: 21px; text-indent: -9999px}
+.navbar-collapse > .pull-right {clear: right !important}
