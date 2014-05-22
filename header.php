@@ -26,7 +26,7 @@
 	<?php wp_head(); ?>
 
 	<?php 
-		if (has_post_thumbnail( $page->ID ))  {
+		if (has_post_thumbnail( $page->ID ) || (is_archive()))  {
 		$background = wp_get_attachment_image_src( get_post_thumbnail_id( $page->ID ), 'full' ); 
 		
 		?>

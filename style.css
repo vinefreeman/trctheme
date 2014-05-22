@@ -25,3 +25,4 @@ Version: 1.0.0
 
 .light-wrapper, .image-caption { background: transparent !important;}
 .light-wrapper {background: transparent !important;}
+.page-image-back{background-image: url("../slowave-child/images/buttons.jpg") !important; background-position: top center!important; background-repeat: no-repeat !important; background-size: cover;}
