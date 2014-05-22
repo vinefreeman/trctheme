@@ -11,13 +11,13 @@ Version: 1.0.0
 @import url('../slowave/style.css');
 
 .navbar-header{
- background-color: rgba(255,255,255,.5) !important;
+ background-color: rgba(255,255,255,.7) !important;
  }
  .home .offset{padding-top: 0px !important}
  .navbar-brand{background-color: #fff !important; padding: 30px 20px;  border-bottom: 3px solid #662d91;}
  .navbar-collapse{clear: right !important}
- .navbar-nav > li > a {padding: 20px 14px !important}
-
+ .navbar-nav > li > a {padding: 20px 14px !important; color: #662d91;}
+.navbar-nav a{font-family: "Oxygen", Helvetica, Arial, sans-serif; font-size: 18px !important; text-transform: lowercase!important;}
  /*Navbits*/
  /*.navbar-nav a {background: url('../slowave-child/images/hover-inactive.png') no-repeat bottom left;}
  .navbar-nav a:hover {background: url('../slowave-child/images/hover-active.png') no-repeat bottom left;}*/
@@ -26,3 +26,6 @@ Version: 1.0.0
 .light-wrapper, .image-caption { background: transparent !important;}
 .light-wrapper {background: transparent !important;}
 .page-image-back{background-image: url("../slowave-child/images/buttons.jpg") !important; background-position: top center!important; background-repeat: no-repeat !important; background-size: cover;}
+.fixed .contact-links{float: left !important; margin-left: 20px;}
+.contact-links .widget {float: right; margin-top: 10px;}
+.contact-links .widget_text{margin-right: 20px;}
