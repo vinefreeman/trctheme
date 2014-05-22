@@ -19,5 +19,9 @@ Version: 1.0.0
  .navbar-nav > li > a {padding: 20px 14px !important}
 
  /*Navbits*/
- .navbar-nav a {background: url('../slowave-child/images/hover-inactive.png') no-repeat bottom left;}
+ /*.navbar-nav a {background: url('../slowave-child/images/hover-inactive.png') no-repeat bottom left;}
+ .navbar-nav a:hover {background: url('../slowave-child/images/hover-active.png') no-repeat bottom left;}*/
  .navbar-nav li.trchouse a {background: url('../slowave-child/images/trc-house.png') no-repeat bottom center; height: 20px; width: 21px; text-indent: -9999px}
+
+.light-wrapper, .image-caption { background: transparent !important;}
+.light-wrapper {background: transparent !important;}

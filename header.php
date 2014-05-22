@@ -24,12 +24,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	<?php wp_head(); ?>
+
+	<?php 
+		if (has_post_thumbnail( $page->ID ))  {
+		$background = wp_get_attachment_image_src( get_post_thumbnail_id( $page->ID ), 'full' ); 
+		
+		?>
+		<style type='text/CSS'>
+		.page-image-back{background-image: url("<?php echo $background[0]; ?>") !important; background-position: top center!important; background-repeat: no-repeat !important; background-size: cover;}
+		</style>
+		<?php 
+		}
+	?>
 </head>
 
 <body <?php body_class( $layout ); ?>>
 
 <div class="body-wrapper">
-
+<div class="page-image-back"><!-- VF added page image back - div finishes in inc/wrapper endtitle -->		
   <div class="yamm navbar basic default">
     <div class="navbar-header">
       <div class="container">
@@ -43,7 +55,7 @@
         		<img src="<?php echo $logo; ?>" alt="<?php echo get_option('custom_logo_alt_text'); ?>" class="retina" />
         	</a> 
         </div>
-<<<<<<< HEAD
+
       <div class="pull-right">
 		<?php 
 			if( is_active_sidebar('shop') ) :
@@ -54,18 +66,8 @@
 
 		?>
 	</div>
-=======
 
-        <div class="pull-right">
-        	<?php 
-        		if (is_active_sidebar('shop')) :
-        			dynamic_sidebar('shop'); 
-        		endif;
-        	?>
 
-        </div>
-        
->>>>>>> f9ba7a5decfad3ac18e5421db81c1788cab6c519
         <div class="collapse navbar-collapse pull-right">
         	<?php 
 	        	 wp_nav_menu( array(
