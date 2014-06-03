@@ -56,7 +56,7 @@
         	</a> 
         </div>
 
-      <div class="pull-right">
+      <div class="pull-right contact-links">
 		<?php 
 			if( is_active_sidebar('shop') ) :
 
