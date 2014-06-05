@@ -18,23 +18,116 @@ HEADER AREA & NAV
 .navbar-header{
  background-color: rgba(255,255,255,.7) !important;
  }
+ .fixed .navbar-header{
+ background-color: rgba(255,255,255,.9) !important;
+ }
+ 
  .home .offset{padding-top: 0px !important}
  .navbar-brand{background-color: #fff !important; padding: 30px 20px;  border-bottom: 3px solid #662d91;}
  .navbar-collapse{clear: right !important}
 
 
- .navbar-nav > li > a {padding: 20px 14px !important; color: #662d91;}
-.navbar-nav a{font-family: "Oxygen", Helvetica, Arial, sans-serif; font-size: 18px !important; text-transform: lowercase!important;}
+ .navbar-nav > li > a {padding: 10px 14px !important; color: #662d91; margin-top: 10px;}
+.navbar-nav > li > a{font-family: "Oxygen", Helvetica, Arial, sans-serif; font-size: 18px !important; text-transform: lowercase!important;}
  /*Navbits*/
 
  /*.navbar-nav a {background: url('../slowave-child/images/hover-inactive.png') no-repeat bottom left;}
  .navbar-nav a:hover {background: url('../slowave-child/images/hover-active.png') no-repeat bottom left;}*/
- .navbar-nav li.trchouse a {background: url('../slowave-child/images/trc-house.png') no-repeat bottom center; height: 20px; width: 21px; text-indent: -9999px}
+ .navbar-nav > li > a:hover, .navbar-nav > li > a:active{ background-color: #fff;}
+ .navbar-nav li.trchouse {padding-top: 8px;}
+ .navbar-nav li.trchouse a {background: url('../slowave-child/images/trc-house.png') no-repeat bottom center; height: 20px; width: 21px; text-indent: -9999px; margin-top: 10px;}
 .light-wrapper, .image-caption { background: transparent !important;}
 .light-wrapper {background: transparent !important;}
 .page-image-back{background-image: url("../slowave-child/images/buttons.jpg") !important; background-position: top center!important; background-repeat: no-repeat !important; background-size: cover;}
 
-.fixed .contact-links{float: left !important; margin-left: 20px;}
+.fixed .contact-links{float: left !important; margin-left: 20px; padding-top: 8px;}
+.navbar.basic.fixed .navbar-brand img { height: 30px;padding: 0 10px !important;}
 .contact-links .widget {float: right; margin-top: 10px;}
 .contact-links .widget_text{margin-right: 20px;}
+.media-modal h1{color: #333 !important;}
 
+/*
+HOME PAGE SPECIFIC
+*/
+
+
+/*
+BLOG
+*/
+
+.avatar{margin-left: 0px !important;}
+
+/*
+Right Now
+*/
+
+.dslc-modules-section-wrapper .single .hentry ul li:before, aside .dslc-modules-section-wrapper ul li:before, .page .hentry ul li:before {content: none;}
+
+/*blog widget in footer*/
+.rpwe-block li{
+border-bottom: none !important;
+}
+
+.rpwe-block li a img{width: 110px !important; height: 110px !important;}
+footer .recent-posts-extended{ padding-left: 20px;}
+footer #nav_menu-3 {border-right: 3px dotted #666;}
+
+/*twitter*/
+ul.tweets li{color: #eee !important; line-height: 20px; margin-bottom: 10px;}
+ul.tweets li a{color: #9a5fc7 !important;}
+ul.tweets li em{display: none;}
+#dslc-content #dslc-module-40 .dslc-widget-title {border-bottom: none !important; margin-bottom: 0 !important;}
+/*
+=================
+Portfolio
+=================
+*/
+.portfoliotitle{margin-top: 30px;}
+
+
+/*
+=================
+TEAM
+=================
+*/
+
+.image-caption{text-align: center; border-style: none !important}
+.single .image-caption{text-align: left;}
+.items.col4 li {
+    margin-bottom: 18px;
+    margin-left: 18px;
+    width: 179px;
+}
+figure img{width: 70% !important; margin: 0 auto;}
+.single figure img{width: 100% !important;}
+.post-content .post-title{color: #333333 !important;}
+
+
+.widget_nav_menu li {list-style-type: none !important; padding-left: 0px !important; margin-left: 0px !important }
+.widget_nav_menu ul{padding-left: 0px !important; margin-left: 0px !important}
+/*
+=================
+RESPONSIVE
+=================
+*/
+
+@media (max-width: 991px) { 
+	.navbar-nav > li > a {margin-top: 0px;}
+	.navbar-nav > li.trchouse > a {border: none !important; padding-left: 10px;}
+	.contact-links{padding-right: 20px; padding-top: 15px; padding-bottom: 15px;}		
+	body.dslc-res-phone .dslc-col {
+    margin: 0px;
+    min-width: 0;
+    width: 100%;
+}
+.tp-bgimg{
+	-webkit-background-size: 100% !important; 
+    -moz-background-size: 100% !important; 
+    -o-background-size: 100% !important; 
+    background-size: 100% !important; 
+    -webkit-background-size: cover !important; 
+    -moz-background-size: cover !important; 
+    -o-background-size: cover !important; 
+    background-size: cover !important; 
+}
+	}

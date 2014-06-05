@@ -26,12 +26,15 @@
 	<?php wp_head(); ?>
 
 	<?php 
-		if (has_post_thumbnail( $page->ID ) || (is_archive()))  {
+		if  (is_post_type_archive('team')){ // do nothing
+		}
+		else if (has_post_thumbnail( $page->ID ) || (is_single()) )  {
 		$background = wp_get_attachment_image_src( get_post_thumbnail_id( $page->ID ), 'full' ); 
 		
 		?>
 		<style type='text/CSS'>
 		.page-image-back{background-image: url("<?php echo $background[0]; ?>") !important; background-position: top center!important; background-repeat: no-repeat !important; background-size: cover;}
+		.single-dslc_staff .page-image-back{background-image: url("http://files.redheadmedia.co.uk/clients/trc/wp/wp-content/uploads/2014/05/page-trc.jpg") !important; background-position: top center!important; background-repeat: no-repeat !important; background-size: cover;}
 		</style>
 		<?php 
 		}
