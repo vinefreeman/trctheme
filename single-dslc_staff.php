@@ -53,6 +53,7 @@
             	get_template_part('loop/content','metapost');
             	the_content(); 
             	wp_link_pages();
+            	get_template_part('loop/loop', 'social');
             ?>
             
           </div><!-- /.post-content --> 
