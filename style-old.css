@@ -72,12 +72,6 @@ border-bottom: none !important;
 footer .recent-posts-extended{ padding-left: 20px;}
 footer #nav_menu-3 {border-right: 3px dotted #666;}
 
-footer #text-4{
-    margin-top: 5px;
-}
-footer #text-4 a.foot-social-p{color: #d8545d !important;}
-footer #text-4 a.foot-social-t{color: #70c2e9 !important;}
-
 /*twitter*/
 ul.tweets li{color: #eee !important; line-height: 20px; margin-bottom: 10px;}
 ul.tweets li a{color: #9a5fc7 !important;}
