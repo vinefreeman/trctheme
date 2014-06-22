@@ -50,11 +50,13 @@
 
             <?php 
             	the_title('<h1 class="post-title entry-title">','</h1>'); 
-            	get_template_part('loop/content','metapost');
+            	//get_template_part('loop/content','metapost');
             	the_content(); 
             	wp_link_pages();
             	get_template_part('loop/loop', 'social');
+
             ?>
+            <a href="<?php echo get_option('home') ?>/our-team/" class="btn">Back to our team</a>
             
           </div><!-- /.post-content --> 
           

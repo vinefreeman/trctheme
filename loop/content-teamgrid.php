@@ -13,7 +13,14 @@
 	
 	<div class="image-caption">
 		<?php 
-			the_title('<h3><a href="'. get_permalink() .'">','</a></h3>'); 
+			//put staff name across two lines
+			$staffName = get_the_title();
+			$twolines = explode (" ", $staffName);
+			?>
+			<h3><a href="'<?php get_permalink() ?>"><?php echo $twolines[0] . "<br />" .  $twolines[1]; ?></a></h3>
+			<?php
+			
+			//the_title('<h3><a href="'. get_permalink() .'">','</a></h3>'); 
 			echo '<span class="meta">'. get_post_meta( $post->ID, '_ebor_the_job_title', true ) .'</span>';
 		?>
 	</div>

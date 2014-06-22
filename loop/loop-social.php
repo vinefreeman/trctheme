@@ -45,7 +45,14 @@
 	
 	$urls = array_filter(array_map(NULL, $urls)); 
 ?>
-  
+
+<?php
+
+	//use staff first name
+	$staffName = get_the_title();
+	$twolines = explode (" ", $staffName);
+	echo "<p class='inspired'>See what inspires " . $twolines[0] . " on Pinterest:</p>";
+?>  
 <ul class="social">
    <?php foreach ($urls as $index => $url ) : ?>
    	   <li><a href="<?php echo $url; ?>" target="_blank"><i class="icon-s-<?php echo $icons[$index]; ?>"></i></a></li>

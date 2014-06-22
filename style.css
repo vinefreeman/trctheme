@@ -83,6 +83,27 @@ ul.tweets li{color: #eee !important; line-height: 20px; margin-bottom: 10px;}
 ul.tweets li a{color: #9a5fc7 !important;}
 ul.tweets li em{display: none;}
 #dslc-content #dslc-module-40 .dslc-widget-title {border-bottom: none !important; margin-bottom: 0 !important;}
+
+
+/*General Styling*/
+.dslc-text-module-content ul li{
+    padding-left: 20px;
+    
+}
+.dslc-modules-section ul li:before{
+    content: "\002022"!important;
+    color: red !important;
+    margin-right: 5px !important;
+
+}
+.dslc-modules-section ul.tweets li:before{content: none !important;}
+
+/*staff JD over two lines*/
+.page-id-47 .meta{
+     line-height: 16px !important;
+     margin-top: 6px;
+}
+footer p, footer ul li a{font-size: 12px !important;}
 /*
 =================
 Portfolio
@@ -90,6 +111,19 @@ Portfolio
 */
 .portfoliotitle{margin-top: 30px;}
 
+/*Rel navigation buttons*/
+
+.navigation a {
+    background-color: #fff;
+    border: 2px solid #9b9b9b;
+     -webkit-border-radius: 50%;
+    border-radius: 50%;
+    color: #9b9b9b;
+    display: inline-block;
+    font-weight: 800;
+    padding: 5px 10px 4px;
+    text-transform: uppercase;
+}
 
 /*
 =================
@@ -107,7 +141,19 @@ TEAM
 figure img{width: 70% !important; margin: 0 auto;}
 .single figure img{width: 100% !important;}
 .post-content .post-title{color: #333333 !important;}
+h1.post-title {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 14px !important;
+}
 
+p.inspired{
+    font-weight: bold; font-style: italic;
+    border-top: 1px dashed #ddd;
+    margin-top: 10px;
+    padding-top: 6px;
+
+}
 
 .widget_nav_menu li {list-style-type: none !important; padding-left: 0px !important; margin-left: 0px !important }
 .widget_nav_menu ul{padding-left: 0px !important; margin-left: 0px !important}
