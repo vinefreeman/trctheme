@@ -62,7 +62,7 @@
             
             <?php
             	 if( get_option('blog_social','1') == 1 )
-            		get_template_part('loop/content','sharing');
+            		get_template_part('loop/content','sharingprojects'); // was just sharing
             ?>
             
           </div><!-- /.post-content --> 
@@ -73,7 +73,7 @@
       
       <?php 
       	if( get_option('blog_author','1') == 1 )
-      		get_template_part('loop/content','author'); 
+      		//get_template_part('loop/content','author'); 
       	
       	if( comments_open() ) 
       		comments_template(); 

@@ -1,6 +1,6 @@
 <?php 
 /**
-*	Social widgets added to projects under meta section.
+*	Social widgets added to projects and single posts under meta section.
 *
 *
 **/ ?>
