@@ -68,7 +68,7 @@ Right Now
 border-bottom: none !important;
 }
 
-.rpwe-block li a img{width: 110px !important; height: 110px !important;}
+.rpwe-block li a img{width: 110px !important; height: auto !important;}
 footer .recent-posts-extended{ padding-left: 20px;}
 footer #nav_menu-3 {border-right: 3px dotted #666;}
 
