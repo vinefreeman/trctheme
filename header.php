@@ -25,15 +25,20 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	<?php wp_head(); ?>
 
-	<?php 
+	<?php // top header background image behind navigation
 		if  (is_post_type_archive('team')){ // do nothing
 		}
+		// if there's a thumbanil display or place holding image
 		else if (has_post_thumbnail( $page->ID ) || (is_single()) )  {
-		$background = wp_get_attachment_image_src( get_post_thumbnail_id( $page->ID ), 'full' ); 
-		
+			if (has_post_thumbnail($page->ID)){
+				$background = wp_get_attachment_image_src( get_post_thumbnail_id( $page->ID ), 'full' ); 
+			} else {
+				$backurl = true;
+				$background = "http://files.redheadmedia.co.uk/clients/trc/wp/wp-content/uploads/2014/05/page-trc.jpg";
+			}
 		?>
 		<style type='text/CSS'>
-		.page-image-back{background-image: url("<?php echo $background[0]; ?>") !important; background-position: top center!important; background-repeat: no-repeat !important; background-size: cover;}
+		.page-image-back{background-image: url("<?php if ($backurl == true) {echo $background;} else {echo $background[0];} ?>") !important; background-position: top center!important; background-repeat: no-repeat !important; background-size: cover;}
 		.single-dslc_staff .page-image-back{background-image: url("http://files.redheadmedia.co.uk/clients/trc/wp/wp-content/uploads/2014/05/page-trc.jpg") !important; background-position: top center!important; background-repeat: no-repeat !important; background-size: cover;}
 		</style>
 		<?php 
