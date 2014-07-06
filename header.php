@@ -38,7 +38,7 @@
 			}
 		?>
 		<style type='text/CSS'>
-		.page-image-back{background-image: url("<?php if ($backurl == true) {echo $background;} else {echo $background[0];} ?>") !important; background-position: top center!important; background-repeat: no-repeat !important; background-size: cover;}
+		.page-image-back{background-image: url("<?php if ($backurl == true) {echo $background;} else {echo $background[0];} ?>") !important; background-position: center <?php if (is_single()){echo "-250px";} else {echo "top";} ?> !important; background-repeat: no-repeat !important; background-size: cover;}
 		.single-dslc_staff .page-image-back{background-image: url("http://files.redheadmedia.co.uk/clients/trc/wp/wp-content/uploads/2014/05/page-trc.jpg") !important; background-position: top center!important; background-repeat: no-repeat !important; background-size: cover;}
 		</style>
 		<?php 

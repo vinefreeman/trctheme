@@ -111,6 +111,8 @@ Portfolio
 */
 .portfoliotitle{margin-top: 30px;}
 
+#dslc-content .dslc-projects .dslc-project-thumb img {height: 140px !important;}
+
 /*Rel navigation buttons*/
 
 .navigation a {
